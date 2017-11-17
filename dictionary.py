@@ -29,5 +29,16 @@ def decideWord(wordList):
 	index=r.randrange(0,listLength)
 	return wordList[index]
 
+#create an index dict
+#it will have letters as keys and index references as values
+#this improves update times for the game display
+def createLetterIndex(word):
+	mydict={}
+	for index in range(len(word)):
+		if word[index] in mydict.keys():
+			mydict[word[index]].append(index)
+		else:
+			mydict[word[index]]=[index]
+	return mydict
 
 

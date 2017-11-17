@@ -26,21 +26,48 @@ while wordLength<4 or wordLength>45:
 	userInput=input("How many letters?(4-45)")
 	if userInput.isdigit():
 		wordLength=int(userInput)
-print("A {} letter word will be selected.".format(wordLength))
+print("We will select a {} letter word.".format(wordLength))
 
 #choose a random word
-wordFound=wordTarget=d.decideWord(lengthWords[wordLength])
+wordTarget=d.decideWord(lengthWords[wordLength])
+#create dictionary for letter indexes of chosen word
+letterIndex=d.createLetterIndex(wordTarget)
+#set wrong tries
 wrongLetters=0
+print("Clue: {}".format(wordsWebster[wordTarget]))
 
 #inialise and show word display
 display=g.initialiseDisplay(wordTarget)
-print(display)
+
 
 #show Hangman
 
+#check if game is won
+#otherwise query for input and evaluate input
+while g.gameEnd(display, wrongLetters)!=True:
+	letter=g.letterInput()
+	if letter in display:
+		print("Letter already found. Hangman grows.")
+		wrongLetters+=1
+	elif letter not in wordTarget:
+		print("Letter not found. Hangman grows.")
+		wrongLetters+=1
+	else:
+		print("Letter found.")
+		display=g.updateDisplay(display, letter, letterIndex)
+	#g.displayHangman(wrongLetters)
+
+if wrongLetters>10:
+	print("You lost the game.")
+else:
+	print("Congratulations.\n{} : {}".format(wordTarget, wordsWebster[wordTarget]))
+
+
 
 #ask for letter
-letter=input("Choose a letter:")
+
+
+
 
 
 #if letter in wordFound
