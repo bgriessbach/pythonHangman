@@ -1,5 +1,5 @@
 # Python Hangman using Webster Dictionary
-![My image](/https://github.com/bgriessbach/pythonHangman/blob/master/screenshot.PNG)  
+![My image](https://github.com/bgriessbach/pythonHangman/blob/master/screenshot.PNG)  
   
 ## Gameplay
 + Select the length of the word
