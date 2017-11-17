@@ -26,7 +26,7 @@ while wordLength<4 or wordLength>45:
 	userInput=input("How many letters?(4-45)")
 	if userInput.isdigit():
 		wordLength=int(userInput)
-print("We will select a {} letter word.".format(wordLength))
+print("We have selected a {} letter word.".format(wordLength))
 
 #choose a random word
 wordTarget=d.decideWord(lengthWords[wordLength])
