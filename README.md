@@ -14,6 +14,8 @@
 
 ## To do
 + add Hangman Animation
++ add way to exit the program prematurely
++ add way to give up/get new word
 + create more checks for faulty input
 + create more checks for wrong output
 + possibly more Ascii Art
