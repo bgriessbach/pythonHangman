@@ -34,13 +34,11 @@ wordTarget=d.decideWord(lengthWords[wordLength])
 letterIndex=d.createLetterIndex(wordTarget)
 #set wrong tries
 wrongLetters=0
+
 print("Clue: {}".format(wordsWebster[wordTarget]))
 
 #inialise and show word display
 display=g.initialiseDisplay(wordTarget)
-
-
-#show Hangman
 
 #check if game is won
 #otherwise query for input and evaluate input
@@ -57,26 +55,12 @@ while g.gameEnd(display, wrongLetters)!=True:
 		display=g.updateDisplay(display, letter, letterIndex)
 	#g.displayHangman(wrongLetters)
 
+
+#End Game either in Loss or Success
 if wrongLetters>10:
 	print("You lost the game.")
 else:
 	print("Congratulations.\n{} : {}".format(wordTarget, wordsWebster[wordTarget]))
-
-
-
-#ask for letter
-
-
-
-
-
-#if letter in wordFound
-#update display and wordFound
-#else increment wrongLetter and update hangman
-#check if game is won or max wrongLetters reached
-#close game if won or lost
-
-
 
 
 
