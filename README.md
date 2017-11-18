@@ -8,7 +8,8 @@
 + if the letter does not occur or has already been found, you lose one try
 + if a new letter is found, the display updates
 + the game ends if all letters are found, or if you have entered 10+ wrong letters
-
+![My image](https://github.com/bgriessbach/pythonHangman/blob/master/lost.PNG)  
+![My image](https://github.com/bgriessbach/pythonHangman/blob/master/won.PNG)  
 ## Progress
 + finished base of Game
 + added first Ascii Art
