@@ -38,23 +38,7 @@ def updateDisplay(display, letter, mydict):
 	return display
 
 def animationHangman(tries):
-	if tries==0:
-		print('''
-	00____________
-      |/      
-      |       
-      |       
-      |        
-      |         
-      |
-      |__________
-      |          |
-      |__________|
-
-
-
-			''')
-	elif tries==1:
+	if tries==1:
 		print('''
 
       ___________
