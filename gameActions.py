@@ -17,6 +17,8 @@ def letterInput():
 	myinput=""
 	while myinput.isalpha()!=True:
 		myinput=input("Choose a letter:")
+		if len(myinput)>1:
+			myinput=""
 	return myinput.upper()
 
 #check if game ends
