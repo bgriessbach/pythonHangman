@@ -8,6 +8,7 @@
 + if the letter does not occur or has already been found, you lose one try
 + if a new letter is found, the display updates
 + the game ends if all letters are found, or if you have entered 10+ wrong letters
+
 ![My image](https://github.com/bgriessbach/pythonHangman/blob/master/lost.PNG)  
 ![My image](https://github.com/bgriessbach/pythonHangman/blob/master/won.PNG)  
 
@@ -17,6 +18,8 @@
 + added Hangman Animation
 + added more Ascii art for End of Game
 + added check for multi-character input
++ Deleted the target word from the clue
++ found issues with source dictionary, some spaces missing
 
 ## To do
 + add way to exit the program prematurely
