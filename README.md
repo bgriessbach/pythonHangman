@@ -1,4 +1,4 @@
-# Python Hangman using Webster Dictionary
+# Python Hangman using Webster's Dictionary
 ![My image](https://github.com/bgriessbach/pythonHangman/blob/master/screenshot.PNG)  
   
 ## Gameplay
@@ -12,11 +12,11 @@
 ## Progress
 + finished base of Game
 + added first Ascii Art
++ added Hangman Animation
++ added more Ascii art for End of Game
 
 ## To do
-+ add Hangman Animation
 + add way to exit the program prematurely
 + add way to give up/get new word
 + create more checks for faulty input
 + create more checks for wrong output
-+ possibly more Ascii Art
