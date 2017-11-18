@@ -35,7 +35,7 @@ letterIndex=d.createLetterIndex(wordTarget)
 #set wrong tries
 wrongLetters=0
 
-print("Clue: {}".format(wordsWebster[wordTarget]))
+print("Clue: {}".format(wordsWebster[wordTarget].lower().replace(wordTarget.lower(), "XXX")))
 
 #inialise and show word display
 display=g.initialiseDisplay(wordTarget)
@@ -45,12 +45,12 @@ display=g.initialiseDisplay(wordTarget)
 while g.gameEnd(display, wrongLetters)!=True:
 	letter=g.letterInput()
 	if letter in display:
-		print("Letter already used.")
+		print("Letter {} already used.".format(letter.upper()))
 		wrongLetters+=1
 		g.animationHangman(wrongLetters)
 		print(" ".join(display)+"\n\n")
 	elif letter not in wordTarget:
-		print("Letter not found.")
+		print("Letter {} not found.".format(letter.upper()))
 		wrongLetters+=1
 		g.animationHangman(wrongLetters)
 		print(" ".join(display)+"\n\n")
