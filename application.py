@@ -48,17 +48,19 @@ while g.gameEnd(display, wrongLetters)!=True:
 		print("Letter already used.")
 		wrongLetters+=1
 		g.animationHangman(wrongLetters)
+		print(" ".join(display)+"\n\n")
 	elif letter not in wordTarget:
 		print("Letter not found.")
 		wrongLetters+=1
 		g.animationHangman(wrongLetters)
+		print(" ".join(display)+"\n\n")
 	else:
 		print("Letter found.")
 		display=g.updateDisplay(display, letter, letterIndex)
 
 
 #End Game either in Loss or Success
-if wrongLetters>10:
+if wrongLetters>9:
 	print('''
 
  __     __           _           _     _   _                                        

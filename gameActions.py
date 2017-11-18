@@ -22,7 +22,7 @@ def letterInput():
 #check if game ends
 #game ends if no "_" remain or too many wrong tries
 def gameEnd(display, tries):
-	if tries>10:
+	if tries>9:
 		return True
 	if "_" not in display:
 		return True
@@ -167,7 +167,8 @@ def animationHangman(tries):
 
 
 			''')
-	elif tries==8:print('''
+	elif tries==8:
+		print('''
      ___________
      |/      |
      |      (_)
@@ -198,7 +199,7 @@ def animationHangman(tries):
 
 
 			''')
-	else:
+	elif tries==10:
 		print('''
      ___________
      |/      |
