@@ -3,13 +3,14 @@
   
 ## Gameplay
 + Select the length of the word
-+ the Webster Dictionary explaination gets displayed
-+ enter letters one by one
++ the Webster Dictionary clue gets displayed
++ enter letters one by one or type "exit" to stop the game
 + if the letter does not occur or has already been found, you lose one try
 + if a new letter is found, the display updates
 + the game ends if all letters are found, or if you have entered 10+ wrong letters
 
-![My image](https://github.com/bgriessbach/pythonHangman/blob/master/lost.PNG)  
+![My image](https://github.com/bgriessbach/pythonHangman/blob/master/lost.PNG)
+
 ![My image](https://github.com/bgriessbach/pythonHangman/blob/master/won.PNG)  
 
 ## Progress
@@ -23,6 +24,7 @@
 + found issues with source dictionary
   + some spaces missing
   + ~~some clues are only off target word by 1/2 letters~~ **Addressed**
++ User can type **Exit** to end the game
 
 ## To do
 + add way to exit the program prematurely
