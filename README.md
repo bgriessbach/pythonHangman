@@ -25,9 +25,8 @@
   + some spaces missing
   + ~~some clues are only off target word by 1/2 letters~~ **Addressed**
 + User can type **Exit** to end the game
++ exclude words that have "see XXX" clues
 
 ## To do
-+ add way to exit the program prematurely
 + add way get new word
-+ create more checks for faulty input
 + make text not split mid-word
