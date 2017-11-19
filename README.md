@@ -28,6 +28,6 @@
 
 ## To do
 + add way to exit the program prematurely
-+ add way to give up/get new word
++ add way get new word
 + create more checks for faulty input
 + make text not split mid-word
