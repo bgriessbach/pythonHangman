@@ -16,7 +16,9 @@ def initialiseDisplay(word):
 def letterInput():
 	myinput=""
 	while myinput.isalpha()!=True:
-		myinput=input("Choose a letter:")
+		myinput=input("Choose a letter:(type exit to stop)")
+		if myinput.lower()=="exit":
+			quit()
 		if len(myinput)>1:
 			myinput=""
 	return myinput.upper()
