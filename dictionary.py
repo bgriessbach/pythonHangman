@@ -24,9 +24,13 @@ def loadWords():
 
 
 #decide a word from the list at random
-def decideWord(wordList):
+def decideWord(wordList, clueList):
 	listLength=len(wordList)
-	index=r.randrange(0,listLength)
+	index=-1
+	while index<0:
+		index=r.randrange(0,listLength)
+		if clueList[wordList[index]][:3]=="see":
+			index=-1
 	return wordList[index]
 
 #create an index dict

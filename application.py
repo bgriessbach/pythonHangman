@@ -36,7 +36,7 @@ while wordLength<4 or wordLength>45:
 print("We have selected a {} letter word.".format(wordLength))
 
 #choose a random word
-wordTarget=d.decideWord(lengthWords[wordLength])
+wordTarget=d.decideWord(lengthWords[wordLength], wordsWebster)
 #create dictionary for letter indexes of chosen word
 letterIndex=d.createLetterIndex(wordTarget)
 #set wrong tries
