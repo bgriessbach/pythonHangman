@@ -19,7 +19,7 @@
 + added more Ascii art for End of Game
 + added check for multi-character input
 + Deleted the target word from the clue
-+hard coded window size and text color
++ hard coded window size and text color
 + found issues with source dictionary
   + some spaces missing
   + some clues are only off target word by 1/2 letters
