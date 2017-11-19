@@ -21,8 +21,8 @@
 + Deleted the target word from the clue
 +hard coded window size and text color
 + found issues with source dictionary
-++ some spaces missing
-++ some clues are only off target word by 1/2 letters
+  + some spaces missing
+  + some clues are only off target word by 1/2 letters
 
 ## To do
 + add way to exit the program prematurely
