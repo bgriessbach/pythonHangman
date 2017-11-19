@@ -8,7 +8,7 @@ lengthWords,wordsWebster=d.loadWords()
 
 #set window color and size
 os.system("Color 75")
-os.system("mode con cols=90 lines=30")
+os.system("mode con cols=90 lines=40")
 
 
 
