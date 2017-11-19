@@ -1,9 +1,16 @@
 import dictionary as d
 import gameActions as g
+import os
 
 
 #load dictionaries
 lengthWords,wordsWebster=d.loadWords()
+
+#set window color and size
+os.system("Color 75")
+os.system("mode con cols=90 lines=30")
+
+
 
 #print welcome message and ask user for prefered word length
 #only allow int input >3 and <46
@@ -34,6 +41,8 @@ wordTarget=d.decideWord(lengthWords[wordLength])
 letterIndex=d.createLetterIndex(wordTarget)
 #set wrong tries
 wrongLetters=0
+
+
 
 print("Clue: {}".format(wordsWebster[wordTarget].lower().replace(wordTarget.lower(), "XXX")))
 
