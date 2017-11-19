@@ -41,4 +41,11 @@ def createLetterIndex(word):
 			mydict[word[index]]=[index]
 	return mydict
 
+def cleanClue(word, clue):
+	word=word.lower()
+	clue=clue.lower()
+	while len(word)>3:
+		clue=clue.replace(word, "XXX")
+		word=word[:-1]
+	return clue
 

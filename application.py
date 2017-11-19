@@ -42,9 +42,10 @@ letterIndex=d.createLetterIndex(wordTarget)
 #set wrong tries
 wrongLetters=0
 
+#clean clue
+clue=d.cleanClue(wordTarget, wordsWebster[wordTarget])
 
-
-print("Clue: {}".format(wordsWebster[wordTarget].lower().replace(wordTarget.lower(), "XXX")))
+print("Clue: {}".format(clue))
 
 #inialise and show word display
 display=g.initialiseDisplay(wordTarget)
