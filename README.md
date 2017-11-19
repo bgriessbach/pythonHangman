@@ -27,6 +27,3 @@
 + User can type **Exit** to end the game
 + exclude words that have "see XXX" clues
 
-## To do
-+ add way get new word
-+ make text not split mid-word
