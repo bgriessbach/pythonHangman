@@ -24,6 +24,7 @@ def loadWords():
 
 
 #decide a word from the list at random
+#if the connect clue starts with "see", try again
 def decideWord(wordList, clueList):
 	listLength=len(wordList)
 	index=-1
@@ -45,6 +46,8 @@ def createLetterIndex(word):
 			mydict[word[index]]=[index]
 	return mydict
 
+
+# clean the clue text so it does not show the Target Word or parts of the target word (4+ digits)
 def cleanClue(word, clue):
 	word=word.lower()
 	clue=clue.lower()
